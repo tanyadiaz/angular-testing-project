@@ -1,0 +1,27 @@
+
+
+<div>
+@if(isVisible==true){
+    
+}@else {
+  
+}@if(isVisible==true){
+    
+<ul>
+    @for (item of agregar; track item) {
+  <li>{{item}}</li>
+  
+  }
+  
+  <input type="text" name="nuevo" [(ngModel)]="nuevo">
+  <button (click)="addItem()">Agregar</button>
+  </ul>
+  <input type="text" name="nuevo" [(ngModel)]="nuevo">
+  <button (click)="actualizar(0)">Actualizar</button>
+  <br><br><br>
+  <button (click)="actualizar(0)">Editar</button>
+  }
+
+<button (click)="toggle()">Eliminar</button>
+
+</div>
